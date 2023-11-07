@@ -34,7 +34,7 @@ public class ExConsultaParteNome{
                 String nomeAluno = rs.getString("alunosNome");
                 double nota = rs.getDouble("alunosNota");
                 String telefone = rs.getString("alunosTelefone");
-                Aluno novo = new Aluno(id, nome, telefone, nota);
+                Aluno novo = new Aluno(id, nomeAluno, telefone, nota);
                 alunos.add(novo);
             }
         } catch (SQLException e) {
